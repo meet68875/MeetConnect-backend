@@ -1,0 +1,37 @@
+[
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "password123",
+    "contact": "123-456-7890",
+    "dob": "1990-05-15T00:00:00Z"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "password123",
+    "contact": "098-765-4321",
+    "dob": "1992-08-20T00:00:00Z"
+  },
+  {
+    "name": "Mike Ross",
+    "email": "mikeross@example.com",
+    "password": "password123",
+    "contact": "111-222-3333",
+    "dob": "1995-01-10T00:00:00Z"
+  },
+  {
+    "name": "Harvey Specter",
+    "email": "harveyspecter@example.com",
+    "password": "password123",
+    "contact": "444-555-6666",
+    "dob": "1980-03-22T00:00:00Z"
+  },
+  {
+    "name": "Jessica Pearson",
+    "email": "jessicapearson@example.com",
+    "password": "password123",
+    "contact": "777-888-9999",
+    "dob": "1978-07-01T00:00:00Z"
+  }
+]
