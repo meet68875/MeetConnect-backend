@@ -15,10 +15,20 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-    origin: process.env.CORS_ORIGIN,
-    credentials: true // Allows cookies to be sent
-}));
+const allowedOrigins = process.env.CORS_ORIGINS.split(',');
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(new Error('Not allowed by CORS'));
+    },
+    credentials: true,
+  })
+);
 
 // Routes
 app.use('/api/auth', authRoutes);
